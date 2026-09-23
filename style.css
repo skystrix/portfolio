@@ -1,0 +1,24 @@
+:root { --bg: #fff; --fg: #000; --muted: #666; }
+[data-theme="dark"] { --bg: #000; --fg: #fff; --muted: #999; }
+
+html { background: var(--bg); color: var(--fg); }
+body {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  font: 15px/1.7 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+header { display: flex; gap: 1.5rem; align-items: baseline; margin-bottom: 3rem; }
+header b { margin-right: auto; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+
+a, button { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover, button:hover { background: var(--fg); color: var(--bg); text-decoration: none; }
+
+h1, h2 { font-size: 1em; font-weight: bold; margin: 2.5rem 0 .5rem; }
+ul { padding-left: 1.2rem; margin: 0; }
+li { margin: .25rem 0; }
+small, time { color: var(--muted); }
+pre { overflow-x: auto; border: 1px solid var(--fg); padding: 1rem; }
+footer { margin-top: 4rem; }
